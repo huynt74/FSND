@@ -58,6 +58,9 @@ export default function Home() {
   const handleLogoutAuth = () => {
     route.push("/api/auth/logout");
     localStorage.setItem('isLogin', false)
+    localStorage.removeItem('token')
+    localStorage.removeItem('role')
+
   };
   // if (isLoading) return <div>Loading...</div>;
   // if (error) return <div>{error.message}</div>;
