@@ -34,3 +34,6 @@ PATCH /actors/<id> and /movies/<id>
 - .\venv\scripts\activate
 - pip install -r requiments.txt
 - Create environment variable in file: .env, flaskenv
+
+## link backend
+https://myapp-capstone-647518bcad02.herokuapp.com/
