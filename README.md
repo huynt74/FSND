@@ -6,6 +6,12 @@
 - Can clone source from link git: https://github.com/huynt74/FSND/
     + Branch frontend: code FE
     + Branch backend: code BE
+## DATA MODELING:
+#### models
+- Two classes with primary keys at least two attributes each:
+    + Movies with attributes title and release date
+    + Actors with attributes name, age and gender
+- [Optional but encouraged] One-to-many or many-to-many relationships between classes
 ## Motivation behind the project
 - After completion of course I got it new knowledge and improved programing skills. I can aplly its into my project final.
 - understand how to create a web application full stack
@@ -26,7 +32,11 @@
     + can use virtual enviroments: python -m vevn venv
     + .\venv\scripts\activate 
     + pip install -r requirements.txt 
-    + Create environment variable in file: .env, flaskenv
+    + Create environment variable in file: .env, .flaskenv
+        in file .flaskenv: 
+            FLASK_APP=src\main.py
+            FLASK_ENV=development
+            FLASK_DEBUG=True
     + flask run to run application
 
 ## Testing instructions
@@ -69,6 +79,8 @@ GET /actors and /movies
 DELETE /actors/ and /movies/
 POST /actors and /movies 
 PATCH /actors/<id> and /movies/<id>
+# RBAC credentials and roles
+Auth0 was set up to manage role-based access control for three users. The API documentation below describes, among others, by which user the endpoints can be accessed. Access credentials and permissions are handled with JWT tockens which must be included in the request header.
 
 ## Heroku Link
 # link frontend
