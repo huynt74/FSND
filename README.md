@@ -12,6 +12,11 @@
     + Movies with attributes title and release date
     + Actors with attributes name, age and gender
 - [Optional but encouraged] One-to-many or many-to-many relationships between classes
+#### Database setup
+- command: 
+    flask db init
+    flask db migrate -m 'comment'
+    flask db upgrade
 ## Motivation behind the project
 - After completion of course I got it new knowledge and improved programing skills. I can aplly its into my project final.
 - understand how to create a web application full stack
